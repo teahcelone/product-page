@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1em;
   font-family: 'Inter', sans-serif;
 }
 
@@ -54,22 +54,57 @@ header nav ul li a:focus {
   gap: 1em;
 }
 
+.price {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #1e4620;
+  border-radius: 10px;
+  transition: all .3s linear;
+  margin: 1.5em 0;
+  padding: .5em;
+}
+
+a:hover {
+  background-color: #06170e;
+}
+
 .feature {
   grid-column: span 3;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
 
+.quote-text {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 footer {
   text-align: center;
 }
 
 
-/* Default styling for all screens ends here */
+@media only screen and (min-width: 38em) {
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .quote-text {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
 
 /* Add media query for tablet */
 
