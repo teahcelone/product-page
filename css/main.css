@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 1em;
+  line-height: 1.5em;
   font-family: 'Inter', sans-serif;
 }
 
@@ -52,6 +53,26 @@ header nav ul li a:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
+  grid-template-areas:
+    "feature feature feature"
+    "img2 img3 img4"
+  ;
+}
+
+.feature {
+  grid-area: feature;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
 }
 
 .price {
@@ -62,26 +83,51 @@ header nav ul li a:focus {
 .button {
   text-decoration: none;
   color: #fff;
+  padding: .5em;
   font-size: 1.1em;
   background-color: #1e4620;
   border-radius: 10px;
   transition: all .3s linear;
-  margin: 1.5em 0;
-  padding: .5em;
+}
+
+.container {
+  margin: 2em 0 3em;
 }
 
 a:hover {
   background-color: #06170e;
 }
 
-.feature {
-  grid-column: span 3;
+h2 {
+  margin: 0 0 -.2em;
+}
+
+h3 {
+  margin: 0 0 -.5em;
+}
+
+.description {
+  margin: 4em 0;
+}
+
+.description ul {
+  line-height: 2.5em;
+  padding: 0;
+  list-style: none;
+}
+
+.info {
+  margin-bottom: 2em;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
+}
+
+.quotes {
+  margin: 5em 0;
 }
 
 .quote-text {
@@ -95,6 +141,15 @@ footer {
 
 
 @media only screen and (min-width: 38em) {
+
+  .images {
+    grid-template-columns: 76% 24%;
+    grid-template-areas:
+      "feature img2"
+      "feature img3"
+      "feature img4"
+    ;
+  }
 
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
