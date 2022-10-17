@@ -87,15 +87,21 @@ header nav ul li a:focus {
   font-size: 1.1em;
   background-color: #1e4620;
   border-radius: 10px;
-  transition: all .3s linear;
 }
 
 .container {
   margin: 2em 0 3em;
 }
 
-a:hover {
-  background-color: #06170e;
+
+.botanical {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+.italic {
+  font-style: italic;
 }
 
 h2 {
@@ -106,8 +112,15 @@ h3 {
   margin: 0 0 -.5em;
 }
 
+.botanical > h4 {
+  margin: 0 0 -1em;
+}
+
 .description {
-  margin: 4em 0;
+  margin: 3em 0;
+  padding: 1em;
+  background-color: #ddead1;
+  border-radius: 15px;
 }
 
 .description ul {
@@ -127,7 +140,7 @@ h3 {
 }
 
 .quotes {
-  margin: 5em 0;
+  margin: 3em 0;
 }
 
 .quote-text {
@@ -140,7 +153,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 55em) {
 
   .images {
     grid-template-columns: 76% 24%;
@@ -160,10 +173,3 @@ footer {
   }
 
 }
-
-/* Add media query for tablet */
-
-
-
-
-/* Add media query for desktop */
